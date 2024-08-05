@@ -1,0 +1,185 @@
+---
+import { TabsComponent } from "../components/Elements";
+import Layout from "../layouts/Layout.astro";
+
+const textTab = {
+  nuestraMision:
+    "It is to be able to capture each of your ideas, with a simple and intuitive experience for a user-friendly product.",
+  nosotros:
+    "We are a company founded by Matias Guevara, CEO of Migrate Solutions, we have a team dedicated to the management and production of high quality software.",
+  trabajos:
+    "Our products range from web development, mobile applications, we also have consulting in workgroups, and product migrations to new technologies.",
+};
+const titlesTab = ["Our Mission", "About us", "Services"];
+
+const english: any = {
+  title: "About Us",
+  description: `At Migrate Solutions, we are more than just a software factory; we
+    are architects of digital transformation. Our journey began with a
+    passion for simplifying the complex process of technology
+    migration. Today, we stand as experts in seamlessly transitioning
+    businesses to modern technologies while simultaneously offering
+    unparalleled team-building services. Meet the minds behind our
+    success, a team dedicated to innovation, quality, and a
+    client-centric approach. Learn about our commitment to reducing
+    the stress of software development by delivering tailor-made
+    solutions focused on the unique needs of each client`,
+};
+const spanish: any = {
+  title: "Sobre Nosotros",
+  description: `En Migrate Solutions, somos más que una fábrica de software; somos 
+  arquitectos de la transformación digital. Nuestro viaje comenzó con una pasión por 
+  simplificar el complejo proceso de migración tecnológica. Hoy en día, somos expertos
+   en la transición fluida de empresas a tecnologías modernas, al mismo tiempo que 
+   ofrecemos servicios inigualables de formación de equipos. Conoce a las mentes 
+   detrás de nuestro éxito, un equipo dedicado a la innovación, la calidad y un 
+   enfoque centrado en el cliente. Conoce nuestro compromiso de reducir el estrés 
+   del desarrollo de software mediante la entrega de soluciones a medida, enfocadas 
+   en las necesidades únicas de cada cliente.`,
+  text: "Algunos de nuestros clientes",
+};
+---
+
+<article>
+  <div class="p-4"></div>
+  <div class="flex flex-col lg:flex-row">
+    <div class="relative z-0 flex flex-row">
+      <img
+        src="/images/pexels-tomas-malik-793526-24778773.jpg"
+        alt="MendozaMontañas"
+      />
+      <div class="divAboutDescription">
+        <div class="divText">
+          <h1 class="AboutUs">{english.title}</h1>
+          <p class="AboutDescription">{english.description}</p>
+        </div>
+        <div class="p-4"></div>
+      </div>
+    </div>
+    <div class="p-4 sm:p-11"></div>
+  </div>
+  <div class="p-4"></div>
+</article>
+
+<style>
+  .background-custom {
+    background-image: url("/images/pexels-cottonbro-6814523.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    height: 20%;
+    box-shadow: 0 4px 6px rgba(0, 55, 95, 0.6);
+  }
+  .AboutUs {
+    font-size: 60px;
+    margin-left: 25px;
+    color: white;
+    margin-top: -5%;
+    text-shadow:
+      2px 2px 4px rgba(0, 0, 0, 0.5),
+      -1px -1px 2px rgba(255, 255, 255, 0.5);
+  }
+
+  .divAboutDescription {
+    position: absolute;
+    padding: 2%;
+    z-index: 1000;
+    width: 800px;
+    margin-top: 10%;
+    margin-left: 35%;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .divText {
+    margin: 0%;
+    padding: 5%;
+    background-color: rgba(0, 55, 95, 0.7);
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  .AboutDescription {
+    margin: 5%;
+    text-align: center;
+    color: white;
+    line-height: 180%;
+  }
+  img {
+    width: 40%;
+    height: 70%;
+    margin-left: 15%;
+    box-shadow: 0 4px 6px rgba(0, 55, 95, 0.6);
+  }
+  .componentAboutUS {
+    background-color: rgba(0, 55, 95, 0.7);
+    padding-bottom: 2%;
+    border-radius: 20px;
+  }
+  @media (max-width: 1200px) {
+    .divAboutDescription {
+      position: absolute;
+      z-index: 1000;
+      padding: 5;
+      left: -20%;
+      width: 90%;
+      border-radius: 20px;
+    }
+    .AboutDescription {
+      color: white;
+    }
+  }
+  @media (max-width: 910px) {
+    .divText {
+    }
+    img {
+      width: 80%;
+      height: 100%;
+      margin-left: 10%;
+      box-shadow: 0 4px 6px rgba(0, 55, 95, 0.6);
+    }
+    .divAboutDescription {
+      position: absolute;
+      z-index: 1000;
+      width: 100%;
+      margin-top: 10%;
+      margin-left: 18%;
+      border-radius: 20px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 570px) {
+    .divAboutDescription {
+      top: -5%;
+      font-size: 15px;
+      margin-top: 25%;
+      margin-left: 20%;
+    }
+    .AboutUs {
+      font-size: 40px;
+      margin-top: -10%;
+    }
+    .divText {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 410px) {
+    .divAboutDescription {
+      margin-top: 25%;
+      height: 90%;
+    }
+    img {
+      height: 500px;
+      width: 95%;
+      margin-left: 2.5%;
+      margin-top: 10%;
+    }
+    .AboutUs {
+      margin-top: -10%;
+    }
+    .divAboutDescription {
+      margin-top: 50%;
+    }
+    .divText {
+      font-size: 10px;
+    }
+  }
+</style>
