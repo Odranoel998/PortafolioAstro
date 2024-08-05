@@ -2,13 +2,6 @@
 import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react";
 import { useState } from "react";
 
-const text = {
-  nuestraMision: "Es la de poder plasmar cada una de sus ideas, con una experiencia simple y intuitiva para un producto amigable con el usuario",
-  nosotros: "Somos una empresa fundada por Matias Guevara, CEO de Migrate Solutions, contamos con un equipo dedicado a la gestión y producción de software de alta calidad.",
-  trabajos: "Nuestros productos abarcan desde el desarrollo web, aplicaciones moviles, además contamos con asesoria en grupos de trabajo, y migraciones de productos a nuevas tecnologías."
-}
-
-
 const english : any= {
   title1 : "IT Management",
   description1:`
@@ -145,65 +138,5 @@ export const Cards = () => {
       </Card>
     </div>
   );
-}
-
-export const TabsComponent = ({titles,text}:any) => {
-
-  const [selected, setSelected] = useState("1");
-  const handleChange = (value: string) => {
-    setSelected(value);
-  };
-
-  return(
-    <div className="mx-6 md:mx-10 sm:px-6 lg:px-8 font-sans leading-loose text-wrap text-white text-justify">
-    <div className="flex sm:flex-row md:flex-row flex-col justify-center border-b-2 border-white p-4">
-      <button
-        className={selected === "1" ? " xl:px-8 sm:mx-10 md:mx-2 sm:px-3 sm:py-2 bg-gray-800 rounded-[20px]  text-white" : " xl:px-8 sm:mx-10 md:mx-2 sm:px-3 sm:py-2"}
-        onClick={(e) => {
-          e.preventDefault();
-          handleChange("1");
-        }}
-      >
-        {titles[0]}
-      </button>
-      <button
-        className={selected === "2" ? " xl:px-8 sm:mx-10 md:mx-2 sm:px-3 sm:py-2 bg-gray-800 rounded-[20px] text-white" : " xl:px-8 sm:mx-10 md:mx-2 sm:px-3 sm:py-2"}
-        onClick={(e) => {
-          e.preventDefault();
-          handleChange("2");
-        }}
-      >
-        {titles[1]}
-      </button>
-      <button
-        className={selected === "3" ? " xl:px-8 sm:mx-10 md:mx-2 sm:px-3 sm:py-2 bg-gray-800 rounded-[20px] text-white" : " xl:px-8 sm:mx-10 md:mx-2 sm:px-3 sm:py-2"}
-        onClick={(e) => {
-          e.preventDefault();
-          handleChange("3");
-        }}
-      >
-        {titles[2]}
-      </button>
-    </div>
-    <div>
-    {selected==="1"?
-      <div className="mx-6 md:mx-10 sm:px-6 lg:px-8 font-sans leading-loose text-wrap text-white text-justify">
-        <h1>{titles[0]}</h1>
-        <p className="text-sm ">{text.nuestraMision}</p>
-      </div>  
-      :selected==="2"?
-      <div className="mx-6 md:mx-10 sm:px-6 lg:px-8 font-sans leading-loose text-wrap text-white text-justify">
-        <h1>{titles[1]}</h1>
-        <p className="text-sm ">{text.nosotros}</p>
-      </div>:
-      <div className="mx-6 md:mx-10 sm:px-6 lg:px-8 font-sans leading-loose text-wrap text-white text-justify" >
-        <h1>{titles[2]}</h1>
-        <p className="text-sm ">{text.trabajos}</p>
-      </div>
-    }
-    </div>
-  </div>
-
-  )
 }
 

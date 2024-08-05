@@ -1,10 +1,17 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
+import cloudflare from '@astrojs/cloudflare';
+import yaml from '@rollup/plugin-yaml';
 
 export default defineConfig({
-  // ...
-  output:'server',
+  vite: {
+    plugins: [yaml()]
+  },
+  output: 'hybrid',
+  adapter: cloudflare({
+    imageService: 'cloudflare',
+  }),
   build: {
     client: './client'
   },
