@@ -15,6 +15,13 @@ const english: any = {
     align perfectly with your business objectives.
   `,
 };
+
+const card1: string =
+  "bg-[url('images/services/marketing-imageonline.co-8358904.webp')]";
+const card2: string =
+  "bg-[url('images/services/servicios-de-consultoria-imageonline.co-2826779.webp')]";
+const card3: string =
+  "bg-[url('images/services/nube-imageonline.co-3728014.webp')]";
 ---
 
 <article>
@@ -34,7 +41,7 @@ const english: any = {
       </div>
       <div class="p-5"></div>
       <div class="flex justify-center">
-        <Cards />
+        <Cards card1={card1} card2={card2} card3={card3} />
       </div>
       <div class="p-5"></div>
     </main>

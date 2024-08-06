@@ -41,7 +41,15 @@ const english : any= {
   `,
 }
 
-export const Cards = () => {
+interface CardProps {
+  card1: string;
+  card2: string;
+  card3: string;
+}
+
+
+
+export const Cards: React.FC<CardProps> = ({ card1, card2, card3 }) => {
   return (
     <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
       <Card 
@@ -65,9 +73,9 @@ export const Cards = () => {
         </div>
       </CardFooter>
       </Card>
-      <Card className="bg-[url('images/services/marketing-imageonline.co-8358904.webp')] 
+      <Card className={`${card1}
         bg-cover bg-center bg-clip-content col-span-12 sm:col-span-4 
-        h-[300px] bg-[#003D69] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white">
+        h-[300px] bg-[#003D69] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white`}>
         <CardHeader className="flex absolute z-10 top-1 flex-col !items-start">
           <div className="text-center text-white mt-1">
           <div className="p-4 rounded-[20px] bg-[#003D69] bg-opacity-80 ">
@@ -85,9 +93,9 @@ export const Cards = () => {
           src="https://nextui.org/images/card-example-3.jpeg"
         />
       </Card>
-      <Card className="bg-[url('images/services/servicios-de-consultoria-imageonline.co-2826779.webp')] 
+      <Card className={`${card2}
         bg-cover bg-center bg-clip-content col-span-12 sm:col-span-4 
-        h-[300px] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white">
+        h-[300px] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white`}>
         <CardHeader className="flex absolute z-10 top-1 flex-col !items-start">
           <div className="text-center text-white mt-1">
           <div className="p-4 rounded-[20px] bg-[#003D69] bg-opacity-80 w-full">
@@ -105,7 +113,7 @@ export const Cards = () => {
           src="https://nextui.org/images/card-example-2.jpeg"
         />
       </Card>
-      <Card isFooterBlurred className="bg-[url('images/services/nube-imageonline.co-3728014.webp')] bg-cover bg-center bg-clip-content w-full h-[300px] col-span-12 sm:col-span-5 bg-[#003D69] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white">
+      <Card isFooterBlurred className={`${card3} bg-cover bg-center bg-clip-content w-full h-[300px] col-span-12 sm:col-span-5 bg-[#003D69] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white`}>
         <CardHeader className="flex absolute z-10 top-1 flex-col items-start">
           <div className="text-center text-white mt-1">
           <div className="p-4 rounded-[20px] bg-[#003D69] bg-opacity-80 w-full">
