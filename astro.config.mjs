@@ -15,5 +15,10 @@ export default defineConfig({
   build: {
     client: './client'
   },
-  integrations: [react(), tailwind()],
+  integrations: [
+    react(), 
+    tailwind({
+      
+    })
+  ],
 });
