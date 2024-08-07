@@ -46,10 +46,14 @@ interface CardProps {
   card2: string;
   card3: string;
 }
+const card1: string =
+  "bg-[url('https://proyectodegardo.weebly.com/uploads/1/9/4/0/19400833/3638973.jpg?478')]";
+const card2: string =
+  "bg-[url('/images/services/servicios-de-consultoria-imageonline.co-2826779.webp')]";
+const card3: string =
+  "bg-[url('/images/services/nube-imageonline.co-3728014.webp')]";
 
-
-
-export const Cards: React.FC<CardProps> = ({ card1, card2, card3 }) => {
+export const Cards= () => {
   return (
     <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
       <Card 
