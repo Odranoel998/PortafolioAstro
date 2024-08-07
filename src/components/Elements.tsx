@@ -47,19 +47,25 @@ interface CardProps {
   card3: string;
 }
 const card1: string =
-  "bg-[url('https://proyectodegardo.weebly.com/uploads/1/9/4/0/19400833/3638973.jpg?478')]";
+  "bg-[url('/images/services/marketing-imageonline.co-8358904.webp')]";
 const card2: string =
   "bg-[url('/images/services/servicios-de-consultoria-imageonline.co-2826779.webp')]";
 const card3: string =
+  "bg-[url('/images/services/gestion-imageonline.co-8896036.webp')]";
+const card4: string =
   "bg-[url('/images/services/nube-imageonline.co-3728014.webp')]";
+const card5: string =
+  "bg-[url('/images/services/desarrollo-movil-imageonline.co-1438872.webp')]";
 
 export const Cards= () => {
   return (
     <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
       <Card 
-        className="bg-[url('images/services/gestion-imageonline.co-8896036.webp')] text-transparent
+        className=
+        {`${card1} text-transparent
           bg-cover bg-center bg-clip-content col-span-12 sm:col-span-4 
-          h-[300px] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white"
+          h-[300px] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-whit
+          `}
       >
         <CardHeader 
           className="flex justify-items-center absolute z-10 top-1 flex-col !items-start">
@@ -77,7 +83,7 @@ export const Cards= () => {
         </div>
       </CardFooter>
       </Card>
-      <Card className={`${card1}
+      <Card className={`${card2}
         bg-cover bg-center bg-clip-content col-span-12 sm:col-span-4 
         h-[300px] bg-[#003D69] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white`}>
         <CardHeader className="flex absolute z-10 top-1 flex-col !items-start">
@@ -97,7 +103,7 @@ export const Cards= () => {
           src="https://nextui.org/images/card-example-3.jpeg"
         />
       </Card>
-      <Card className={`${card2}
+      <Card className={`${card3}
         bg-cover bg-center bg-clip-content col-span-12 sm:col-span-4 
         h-[300px] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white`}>
         <CardHeader className="flex absolute z-10 top-1 flex-col !items-start">
@@ -117,7 +123,7 @@ export const Cards= () => {
           src="https://nextui.org/images/card-example-2.jpeg"
         />
       </Card>
-      <Card isFooterBlurred className={`${card3} bg-cover bg-center bg-clip-content w-full h-[300px] col-span-12 sm:col-span-5 bg-[#003D69] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white`}>
+      <Card isFooterBlurred className={`${card4} bg-cover bg-center bg-clip-content w-full h-[300px] col-span-12 sm:col-span-5 bg-[#003D69] bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white`}>
         <CardHeader className="flex absolute z-10 top-1 flex-col items-start">
           <div className="text-center text-white mt-1">
           <div className="p-4 rounded-[20px] bg-[#003D69] bg-opacity-80 w-full">
@@ -136,7 +142,7 @@ export const Cards= () => {
         />
       </Card>
       <Card isFooterBlurred 
-        className="bg-[url('images/services/desarrollo-movil-imageonline.co-1438872.webp')] bg-cover bg-center bg-clip-content w-full h-[300px] col-span-12 sm:col-span-7 bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white">
+        className={`${card5} bg-cover bg-center bg-clip-content w-full h-[300px] col-span-12 sm:col-span-7 bg-opacity-30 hover:shadow-2xl transition duration-500 hover:shadow-black hover:mt-[-20px] shadow-white`}>
         <CardHeader className="flex absolute z-10 top-1 flex-col items-start">
           <div className="text-center text-white mt-1">
           <div className="p-4 rounded-[20px] bg-[#003D69] bg-opacity-80 w-full">
