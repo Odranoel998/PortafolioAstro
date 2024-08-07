@@ -11,10 +11,10 @@ export default function Footer() {
   const onChange = (e:any) => setValue(e.target.value)
 
   return (
-    <div className="mx-6  md: md:mx-10 py-3 md:py-4 z-20  grid place-items-center tracking-wide space-y-4 bg-[#009CA3] rounded-b-3xl shadow-2xl shadow-gray-400 mb-10">
+    <div className="mx-6 md: md:mx-10 py-3 md:py-4 z-20  grid place-items-center tracking-wide space-y-4 bg-[#009CA3] rounded-b-3xl shadow-2xl shadow-gray-400 mb-10">
       <Divider className=" w-11/12 bg-white rounded-lg" />
-      <div className="w-10/12 flex flex-row justify-between space-x-16 md:space-x-96 text-xs md:text-base text-white text-center font-sans">
-      <div className="space-y-2 text-[100%] w-[180px] max-[330px]:ml-[-12%]">
+      <div className="w-10/12 flex flex-row justify-between space-x-16 md:space-x-96 text-xs md:text-base text-white text-center font-sans ml-[-5%] max-[560px]:ml-[-10%]">
+      <div className="space-y-2 text-[100%] w-[180px] max-[330px]:ml-[20%]">
           <h1>Our Social Media:</h1>
           <div className="flex flex-row gap-4 justify-center">
             <Link href="">
