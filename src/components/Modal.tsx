@@ -7,9 +7,9 @@ export const ModalComponent= () => {
 
   return (
     <div>
-    <div className="flex flex-col text-white text-[15px] h-full max-[330px]:ml-[-90%]">
+    <div className="flex flex-col w-[120%] text-white text-[100%] h-full max-[330px]:ml-[-90%]">
         <p>Contact Us:</p>
-        <Button onPress={onOpen} className="bg-transparent" >
+        <Button onPress={onOpen} className="bg-transparent">
         <Image
            radius="none"
            src="/images/icono-mensaje.webp"
