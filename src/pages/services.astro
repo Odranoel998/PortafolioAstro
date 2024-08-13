@@ -18,27 +18,23 @@ const english: any = {
 ---
 
 <article>
-  <div class="">
-    <main class="h-[40rem] bg-[#009CA3] rounded-t-3xl">
-      <div class="font-sans leading-loose text-wrap text-white text-justify">
-        <div class="bgImg">
-          <div class="divText">
-            <h1>{english.title}</h1>
-            <div>
-              <p class="description">
-                {english.description}
-              </p>
-            </div>
-          </div>
+  <div class="font-sans leading-loose text-wrap text-white text-justify">
+    <div class="bgImg">
+      <div class="divText">
+        <h1>{english.title}</h1>
+        <div>
+          <p>
+            {english.description}
+          </p>
         </div>
       </div>
-      <div class="p-5"></div>
-      <div class="flex justify-center">
-        <Cards />
-      </div>
-      <div class="p-5"></div>
-    </main>
+    </div>
   </div>
+  <div class="p-5"></div>
+  <div class="flex justify-center">
+    <Cards />
+  </div>
+  <div class="p-5"></div>
 </article>
 
 <style>
@@ -50,21 +46,12 @@ const english: any = {
     height: 20%;
     width: 100%;
   }
-  h1 {
-    font-size: 320%;
-    font: bold;
-    text-align: center;
-    text-shadow:
-      2px 2px 4px rgba(0, 0, 0, 0.5),
-      -1px -1px 2px rgba(255, 255, 255, 0.5);
-  }
   .divText {
     margin: 0%;
     margin-top: 5%;
     padding: 5%;
     background-color: rgba(0, 55, 95, 0.7);
     border-radius: 20px;
-    font-size: 20px;
   }
   .description {
     margin: 5%;

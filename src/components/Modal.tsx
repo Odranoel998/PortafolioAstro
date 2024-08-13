@@ -6,8 +6,8 @@ export const ModalComponent= () => {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
   return (
-    <div className="mr-[-50%]">
-    <div className="flex flex-col w-[120%] text-white text-[100%] h-full ">
+    <div className="p-4">
+    <div className="flex flex-col border-2 border-transparent">
         <p>Contact Us:</p>
         <Button onPress={onOpen} className="bg-transparent">
         <Image

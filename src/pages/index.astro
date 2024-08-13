@@ -3,13 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Services from "../pages/services.astro";
 import About from "../pages/about.astro";
 import SectionContainer from "@components/SectionContainer.astro";
-
-const imagesCarrousel = [
-  "images/carrousel/logoEmpresa-1-imageonline.co-5293840.webp",
-  "images/carrousel/logoEmpresa-2-imageonline.co-3864523.webp",
-  "images/carrousel/logoEmpresa-3-imageonline.co-9837381.webp",
-  "images/carrousel/logoEmpresa-4-imageonline.co-4516536.webp",
-];
+import Slider from "../components/Slider.astro";
+import Footer from "../components/Footer";
 
 const english: any = {
   title: "Welcome to Migrate Solutions",
@@ -17,7 +12,6 @@ const english: any = {
     "Your trusted partner in software innovation. We specialize in seamlessly migrating businesses from legacy technologies to cutting-edge solutions",
   descriptionTwo:
     "Our mission is to alleviate the challenges of team building by offering comprehensive services that include talent acquisition,team formation, and project development. Explore how we transform ideas into reality, ensuring your software journey is both stress-free and tailored to meet your unique business needs.",
-  text: "Some of our customers",
 };
 const spanish: any = {
   title: "Bienvenido a Migrate Solutions",
@@ -33,99 +27,49 @@ const spanish: any = {
   title="Migrate Solutions"
   description="Crear tu aplicación web o móvil."
 >
-  <div class="flex mx-6 mt-5 md:mx-10 md:mt-10">
-    <main class="bg-[#009CA3] rounded-t-3xl">
-      <div class="font-sans leading-loose text-wrap text-white text-justify">
-        <SectionContainer id="Home">
-          <div class="divText">
-            <div class="divTextBg">
-              <h1>{english.title}</h1>
-              <p>
-                {english.descriptionOne}
-              </p>
-              <p>
-                {english.descriptionTwo}
-              </p>
-            </div>
-          </div>
-        </SectionContainer>
-        <div class="p-4"></div>
-        <SectionContainer id="About">
-          <About />
-        </SectionContainer>
-        <div class="p-4"></div>
-        <SectionContainer id="Services">
-          <Services />
-        </SectionContainer>
-        <div class="p-4"></div>
-        <p class="textSome">{english.text}</p>
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <img src={imagesCarrousel[0]} alt="SwisMedical" class="imgSwis" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[1]} alt="Vantek" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[2]} alt="MunicipioMaipu" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[3]} alt="Flux" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[0]} alt="" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[1]} alt="" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[2]} alt="" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[3]} alt="" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[0]} alt="" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[1]} alt="" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[2]} alt="" />
-            </div>
-            <div class="slide">
-              <img src={imagesCarrousel[3]} alt="" />
-            </div>
-          </div>
+  <div>
+    <SectionContainer id="Home">
+      <div class="divText">
+        <div class="divTextBg">
+          <h1>{english.title}</h1>
+          <p>
+            {english.descriptionOne}
+          </p>
+          <p>
+            {english.descriptionTwo}
+          </p>
         </div>
       </div>
-    </main>
+    </SectionContainer>
+    <div class="p-4"></div>
+    <SectionContainer id="About">
+      <About />
+    </SectionContainer>
+    <div class="p-4"></div>
+    <SectionContainer id="Services">
+      <Services />
+    </SectionContainer>
+    <div class="p-4"></div>
+    <Slider />
+    <div class="p-4"></div>
+    <footer>
+      <Footer client:load />
+    </footer>
   </div>
 </Layout>
 
 <style>
-  h1 {
-    font-size: 320%;
-    font: bold;
-    text-align: center;
-    text-shadow:
-      2px 2px 4px rgba(0, 0, 0, 0.5),
-      -1px -1px 2px rgba(255, 255, 255, 0.5);
-  }
   .divText {
     margin: 0%;
-    margin-top: 0%;
+    margin-top: -10%;
     padding: 5%;
     background-image: url("/images/pexels-cottonbro-6814523-imageonline.co-4547742.webp");
     background-size: cover;
     background-position: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
     padding: 5%;
     height: 20%;
-    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   .divTextBg {
     margin: 0%;
@@ -133,70 +77,5 @@ const spanish: any = {
     padding: 5%;
     background-color: rgba(0, 55, 95, 0.7);
     border-radius: 20px;
-  }
-  .textSome {
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-    margin-top: 5%;
-    text-shadow:
-      2px 2px 4px rgba(0, 0, 0, 0.5),
-      -1px -1px 2px rgba(255, 255, 255, 0.5);
-  }
-  .slider {
-    width: 65vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-  }
-  .slider .slide-track {
-    display: flex;
-    animation: scroll 30s linear infinite;
-    width: calc(90px * 12);
-  }
-  .slider .slide {
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15%;
-    width: 10%;
-    flex-shrink: 0;
-  }
-  .slider .slide img {
-    width: 100%;
-  }
-  @keyframes scroll {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(calc(-90px * 12));
-      transform: translateX(calc(-90px * 12));
-    }
-  }
-  @media (max-width: 720px) {
-    h1 {
-      font-size: 20px;
-    }
-    .divText {
-      font-size: 10px;
-    }
-    .slider .slide-track {
-      display: flex;
-      animation: scroll 30s linear infinite;
-      width: calc(40px * 12);
-    }
-    @keyframes scroll {
-      0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-      }
-      100% {
-        -webkit-transform: translateX(calc(-40px * 12));
-        transform: translateX(calc(-40px * 12));
-      }
-    }
   }
 </style>

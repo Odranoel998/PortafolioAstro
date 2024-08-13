@@ -28,26 +28,22 @@ const spanish: any = {
 ---
 
 <article>
-  <div class="p-4"></div>
   <div class="flex flex-col lg:flex-row">
     <div class="relative z-0 flex flex-row">
       <img
         src="/images/pexels-tomas-malik-793526-24778773-imageonline.co-4775006.webp"
         alt="MendozaMontañas"
+        loading="lazy"
       />
       <div class="divAboutDescription">
         <div class="divText">
-          <h1 class="AboutUs">{english.title}</h1>
-          <p class="AboutDescription">{english.description}</p>
+          <h1>{english.title}</h1>
+          <p>{english.description}</p>
         </div>
-        <div class="p-4"></div>
       </div>
     </div>
-    <div class="p-4 sm:p-11"></div>
   </div>
-  <div class="p-4"></div>
 </article>
-
 <style>
   .background-custom {
     background-image: url("/images/pexels-cottonbro-imageonline.co-6814523.webp");
@@ -56,14 +52,6 @@ const spanish: any = {
     padding-top: 40px;
     height: 20%;
     box-shadow: 0 4px 6px rgba(0, 55, 95, 0.6);
-  }
-  .AboutUs {
-    font-size: 320%;
-    margin-left: 25px;
-    color: white;
-    text-shadow:
-      2px 2px 4px rgba(0, 0, 0, 0.5),
-      -1px -1px 2px rgba(255, 255, 255, 0.5);
   }
 
   .divAboutDescription {
@@ -74,31 +62,18 @@ const spanish: any = {
     margin-top: 10%;
     margin-left: 30%;
     border-radius: 20px;
-    text-align: center;
   }
   .divText {
     margin: 0%;
     padding: 5%;
     background-color: rgba(0, 55, 95, 0.7);
     border-radius: 20px;
-    font-size: 20px;
-  }
-  .AboutDescription {
-    margin: 5%;
-    text-align: center;
-    color: white;
-    line-height: 180%;
   }
   img {
-    width: 40%;
-    height: 70%;
+    width: 35%;
+    height: 55%;
     margin-left: 15%;
     box-shadow: 0 4px 6px rgba(0, 55, 95, 0.6);
-  }
-  .componentAboutUS {
-    background-color: rgba(0, 55, 95, 0.7);
-    padding-bottom: 2%;
-    border-radius: 20px;
   }
   @media (max-width: 1200px) {
     .divAboutDescription {
@@ -108,9 +83,6 @@ const spanish: any = {
       left: -20%;
       width: 90%;
       border-radius: 20px;
-    }
-    .AboutDescription {
-      color: white;
     }
   }
   @media (max-width: 910px) {
@@ -139,11 +111,6 @@ const spanish: any = {
       margin-top: 25%;
       margin-left: 20%;
     }
-    .AboutUs {
-    }
-    .divText {
-      font-size: 10px;
-    }
   }
   @media (max-width: 410px) {
     .divAboutDescription {
@@ -161,9 +128,6 @@ const spanish: any = {
     }
     .divAboutDescription {
       margin-top: 50%;
-    }
-    .divText {
-      font-size: 10px;
     }
   }
 </style>
