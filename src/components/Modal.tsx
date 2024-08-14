@@ -15,7 +15,10 @@ export const ModalComponent= () => {
            src="/images/icono-mensaje.webp"
            alt="Contact Us"
            id="Email Form"
-           className="size-8 md:size-10"  
+           className="size-8 md:size-10"
+           width={"50px"}
+           height={"20px"}
+           loading="lazy"  
           />
       </Button>
     </div>
@@ -29,7 +32,7 @@ export const ModalComponent= () => {
         <ModalContent>
           {(onClose) => (
             <ModalBody  className="items-center justify-center flex flex-row"> 
-              <div className="min-[600px]:bg-[url('/images/pexels-olly-789822.jpg')] bg-cover min-[1550px]:bg-center bg-right h-[100%] w-[100%] p-8"></div>
+              <div className="min-[600px]:bg-[url('/images/pexels-olly-789822-imageonline.co-3154120.webp')] bg-cover min-[1550px]:bg-center bg-right h-[100%] w-[100%] p-8"></div>
               <div className=" h-[100%] w-[50%]" ></div>
               <FormContact/>
             </ModalBody>

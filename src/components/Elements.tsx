@@ -77,7 +77,7 @@ export const Cards= () => {
         </CardHeader>
         <CardFooter className="absolute hover:h-[100%] bottom-0 z-10">
         <div>
-        <p className=" text-[70%]   p-2 hover:text-white transition duration-500 hover:bg-[#003D69] mt-10 rounded-[20px] bg-transparent w-full">
+        <p className=" text-[70%] p-4 hover:text-white transition duration-500 hover:bg-[#003D69] mt-10 rounded-[20px] bg-transparent w-full">
           {english.description1}
         </p>
         </div>
@@ -91,7 +91,7 @@ export const Cards= () => {
           <div className="p-4 rounded-[20px] bg-[#003D69] bg-opacity-80 ">
               <h1 className="text-tiny font-bold text-[15px]">{english.title2}</h1>
             </div>
-            <p className=" text-[70%]   p-2 hover:text-white transition duration-500 hover:bg-[#003D69] mt-5 rounded-[20px] text-transparent bg-transparent w-full">
+            <p className=" text-[70%]   p-4 hover:text-white transition duration-500 hover:bg-[#003D69] mt-5 rounded-[20px] text-transparent bg-transparent w-full">
               {english.description2}
             </p>
           </div>
@@ -111,7 +111,7 @@ export const Cards= () => {
           <div className="p-4 rounded-[20px] bg-[#003D69] bg-opacity-80 w-full">
               <h1 className="text-tiny font-bold text-[15px]">{english.title3}</h1>
             </div>
-            <p className=" text-[70%]   p-2 hover:text-white transition duration-500 hover:bg-[#003D69] mt-5 rounded-[20px] text-transparent bg-transparent w-full">
+            <p className=" text-[70%]   p-4 hover:text-white transition duration-500 hover:bg-[#003D69] mt-5 rounded-[20px] text-transparent bg-transparent w-full">
               {english.description3}
             </p>
           </div>
@@ -129,7 +129,7 @@ export const Cards= () => {
           <div className="p-4 rounded-[20px] bg-[#003D69] bg-opacity-80 w-full">
               <h1 className="text-tiny font-bold text-[15px]">{english.title4}</h1>
             </div>
-            <p className=" text-[70%]   p-2 hover:text-white transition duration-500 hover:bg-[#003D69] mt-5 rounded-[20px] text-transparent bg-transparent w-full">
+            <p className=" text-[70%]   p-4 hover:text-white transition duration-500 hover:bg-[#003D69] mt-5 rounded-[20px] text-transparent bg-transparent w-full">
               {english.description4}
             </p>
           </div>
@@ -148,7 +148,7 @@ export const Cards= () => {
           <div className="p-4 rounded-[20px] bg-[#003D69] bg-opacity-80 w-full">
               <h1 className="text-tiny font-bold text-[15px]">{english.title5}</h1>
             </div>
-            <p className=" text-[10px] hover:p-4 hover:text-white transition duration-500 hover:bg-[#003D69] mt-5 rounded-[20px] text-transparent bg-transparent w-full">
+            <p className=" text-[70%] hover:p-4 hover:text-white transition duration-500 hover:bg-[#003D69] mt-5 rounded-[20px] text-transparent bg-transparent w-full">
               {english.description5}
             </p>
           </div>
