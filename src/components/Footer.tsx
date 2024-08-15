@@ -18,7 +18,7 @@ export default function Footer() {
             <Link href="">
               <Image
                 radius="none"
-                src="/images/icono-X.webp"
+                src="/images/icono-X.png"
                 alt="Twitter/'X' Profile"
                 id="X"
                 className="size-6 md:size-8 mr-3"
