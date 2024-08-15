@@ -23,7 +23,7 @@ export default function Footer() {
                 id="X"
                 className="size-6 md:size-8 mr-3"
                 width={"40px"}
-                height={"20px"}
+                height={"30px"}
                 loading="lazy"
               />
             </Link>
@@ -35,7 +35,7 @@ export default function Footer() {
                 id="LinkedIn"
                 className="size-6 md:size-8"
                 width={"40px"}
-                height={"20px"}
+                height={"30px"}
                 loading="lazy"
               />
             </Link>

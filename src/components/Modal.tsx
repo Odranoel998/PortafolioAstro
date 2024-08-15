@@ -17,7 +17,7 @@ export const ModalComponent= () => {
            id="Email Form"
            className="size-8 md:size-10"
            width={"50px"}
-           height={"20px"}
+           height={"30px"}
            loading="lazy"  
           />
       </Button>
