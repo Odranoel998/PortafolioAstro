@@ -2,8 +2,8 @@
 import { useForm } from "src/hooks/useForm";
 import React, { useRef, useState } from 'react';
 
-const onepublicKey = import.meta.env.PUBLIC_KEY_EMAIL.toString()
-const publicKey= onepublicKey
+// const onepublicKey = import.meta.env.PUBLIC_KEY_EMAIL.toString()
+// const publicKey= onepublicKey
 
 
 const initialForm={
