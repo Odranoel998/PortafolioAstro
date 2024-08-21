@@ -32,7 +32,7 @@ export const ModalComponent= () => {
         <ModalContent>
           {(onClose) => (
             <ModalBody  className="items-center justify-center flex flex-row"> 
-              <div className="min-[600px]:bg-[url('/images/pexels-olly-789822-imageonline.co-3154120.webp')] bg-cover min-[1550px]:bg-center bg-right h-[100%] w-[100%] p-8"></div>
+              <div className="min-[600px]:bg-[url('/images/Contact.webp')] bg-cover min-[1550px]:bg-center bg-right h-[100%] w-[100%] p-8"></div>
               <div className=" h-[100%] w-[50%]" ></div>
               <FormContact/>
             </ModalBody>
