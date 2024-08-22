@@ -13,9 +13,9 @@ export default defineConfig({
   // adapter: cloudflare({
   //   imageService: 'cloudflare',
   // }),
-  // build: {
-  //   client: './client'
-  // },
+  build: {
+    client: './client'
+  },
   integrations: [
     react(), 
     tailwind({
