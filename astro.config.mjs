@@ -10,9 +10,9 @@ export default defineConfig({
   //   plugins: [yaml()]
   // },
   output: 'hybrid',
-  // adapter: cloudflare({
-  //   imageService: 'cloudflare',
-  // }),
+  adapter: cloudflare({
+    imageService: 'cloudflare',
+  }),
   build: {
     client: './client'
   },
