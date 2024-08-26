@@ -17,6 +17,7 @@ export default defineConfig({
   build: {
     client: './client'
   },
+  site:"https://www.tusitio.com/",
   integrations: [
     react(), 
     tailwind({
