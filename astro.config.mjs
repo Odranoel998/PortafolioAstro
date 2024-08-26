@@ -3,6 +3,7 @@ import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 import cloudflare from '@astrojs/cloudflare';
 import yaml from '@rollup/plugin-yaml';
+import sitemap from '@astrojs/sitemap';
 import {sitemapPlugin} from '@astrojs/sitemap';
 
 export default defineConfig({
@@ -20,6 +21,7 @@ export default defineConfig({
     react(), 
     tailwind({
     }),
+    sitemap(),
     sitemapPlugin()
   ],
 });
