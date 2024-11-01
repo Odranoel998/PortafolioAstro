@@ -1,0 +1,66 @@
+---
+import Code from "./icons/Code.astro";
+import GitHub from "./icons/GitHub.astro";
+import LinkIcon from "./icons/LinkIcon.astro";
+import React from "./icons/React.astro";
+import TailwindCSS from "./icons/TailwindCSS.astro";
+---
+
+<section id="proyectos" class="pt-16">
+  <div class="flex items-center gap-x-4 pb-4">
+    <Code class="size-8" />
+    <h3 class="text-2xl font-bold">Proyectos</h3>
+  </div>
+  <div class="grid items-center sm:flex sm:justify-evenly">
+    <div
+      class="grid justify-items-center sm:min-w-[300px] md:min-w-[350px] sm:mr-2 md:mr-4"
+    >
+      <img
+        src="images/ecosave-strategies.webp"
+        alt="EcoSave Strategies Page"
+        class="w-5/6 sm:w-[300px] md:w-[350px] rounded-xl"
+      />
+    </div>
+    <div class="pt-4 sm:pt-0 grid justify-items-center sm:justify-items-start">
+      <h3 class="text-4xl font-bold mb-2 md:mb-4">Landing Page</h3>
+      <div class="flex gap-x-2 mb-4 sm:mb-2 md:mb-4 opacity-70">
+        <div
+          class="flex items-center gap-x-2 rounded-full text-xs font-bold bg-gray-900 text-white py-1 px-2"
+        >
+          <React />
+          React Native
+        </div>
+        <div
+          class="flex items-center gap-x-2 rounded-full text-xs font-bold bg-gray-900 text-white py-1 px-2"
+        >
+          <TailwindCSS />
+          Tailwind CSS
+        </div>
+      </div>
+      <p
+        class="opacity-80 text-md text-center sm:text-left mb-4 sm:mb-2 md:mb-4"
+      >
+        Página de EcoSave Strategies, desarrollada con mi grupo del programa
+        Mendoza Futura.
+      </p>
+      <!-- <div class="flex gap-x-4">
+        <a href="https://github.com/SirLauty-GC/EcoSaveStrategies/">
+          <button
+            class="flex items-center gap-x-2 py-1 px-2 border border-inherit bg-transparent hover:bg-white text-white hover:text-black text-sm font-bold rounded-xl transition duration-300"
+          >
+            <GitHub />
+            Código
+          </button>
+        </a>
+        <a href="https://ecosaverstrategies.pages.dev/">
+          <button
+            class="flex items-center gap-x-2 py-1 px-2 border border-inherit bg-transparent hover:bg-white text-white hover:text-black text-sm font-bold rounded-xl transition duration-300"
+          >
+            <LinkIcon />
+            Ver página
+          </button>
+        </a>
+      </div> -->
+    </div>
+  </div>
+</section>

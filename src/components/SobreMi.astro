@@ -1,0 +1,35 @@
+---
+import Person from "./icons/Person.astro";
+---
+
+<section id="sobre-mi" class="py-16">
+  <div class="flex items-center gap-x-4 pb-4">
+    <Person class="size-8" />
+    <h3 class="text-2xl font-bold">Sobre mí</h3>
+  </div>
+  <div class="grid sm:flex sm:justify-evenly items-center">
+    <div
+      class="md:max-w-[500px] [&>p]:mb-4 text-center md:text-start opacity-80"
+    >
+      <p>
+        Soy Leonardo Dominguez, estudiante en Ingenieria en Sistemas soy una
+        persona apasionado por la tecnología y el desarrollo móvil, disfruto
+        crear soluciones prácticas que puedan facilitar la vida de las personas.
+      </p>
+      <p>
+        Desde que comencé a aprender React Native, he enfocado mis esfuerzos en
+        construir aplicaciones funcionales y fáciles de usar, perfeccionando mis
+        habilidades con proyectos personales y prácticas. Mi meta es seguir
+        aprendiendo y crecer en el desarrollo móvil, contribuyendo en equipos de
+        trabajo donde pueda sumar valor con creatividad y dedicación.
+      </p>
+    </div>
+    <div class="pt-4 sm:pt-0 grid justify-items-center ml-4">
+      <img
+        src="images/LeonardoDominguez.jpeg"
+        alt="Leonardo Dominguez"
+        class="w-[250px] sm:w-[600px] rounded-xl"
+      />
+    </div>
+  </div>
+</section>

@@ -1,27 +1,8 @@
 import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
-import tailwind from '@astrojs/tailwind';
-import cloudflare from '@astrojs/cloudflare';
-// import yaml from '@rollup/plugin-yaml';
-import sitemap from '@astrojs/sitemap';
-// import {sitemapPlugin} from '@astrojs/sitemap';
 
+import tailwind from "@astrojs/tailwind";
+
+// https://astro.build/config
 export default defineConfig({
-  // vite: {
-  //   plugins: [yaml()]
-  // },
-  output: 'hybrid',
-  adapter: cloudflare({
-    imageService: 'cloudflare',
-  }),
-  build: {
-    client: './client'
-  },
-  site:"https://www.tusitio.com/",
-  integrations: [
-    react(), 
-    tailwind({
-    }),
-    sitemap()
-  ],
+  integrations: [tailwind()]
 });

@@ -1,91 +1,34 @@
 ---
-import "../styles/tailwind.css";
-import Nav from "../components/Nav.astro";
-import { ViewTransitions } from "astro:transitions";
-
-interface Props {
-  title: string;
-  description: string;
-}
-
-const { description, title } = Astro.props;
+import Header from '../components/Header.astro';
+import '@fontsource-variable/nunito';
 ---
 
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content={description} />
-    <meta name="keywords" content="SEO,development web, services, programing" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/icono-page.png" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <meta name="robots" content="index,follow" />
-    <meta name="googlebot" content="index,follow" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body id="root" class="w-auto">
-    <nav>
-      <Nav />
-    </nav>
-    <main>
-      <div class="spaceNav"></div>
-      <div class="flex min-h-full m-5">
-        <slot />
-      </div>
-    </main>
-
-    <style is:global>
-      html {
-        scroll-behavior: smooth;
-      }
-      main {
-        background-color: #009ca3;
-        margin: 2%;
-        margin-top: 12%;
-        border-radius: 20px;
-      }
-      p {
-        font-size: 120%;
-      }
-      @media (max-width: 720px) {
-        h1 {
-          font-size: 20px;
-        }
-        .divText {
-          font-size: 10px;
-        }
-        .slider .slide-track {
-          display: flex;
-          animation: scroll 30s linear infinite;
-          width: calc(40px * 12);
-        }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-      }
-      @media (prefers-color-scheme: dark) {
-        body {
-          color: rgba(255, 255, 255, 0.9);
-        }
-      }
-
-      #header-nav {
-        animation: blur linear both 0.5s;
-        animation-timeline: scroll();
-        animation-range: 0 500px;
-      }
-      .spaceNav {
-        padding: 3%;
-      }
-      @media (max-width: 570px) {
-        .spaceNav {
-          padding: 5%;
-        }
-      }
-    </style>
-  </body>
+<html lang="es" class="!scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="code.png" />
+		<meta name="generator" content={Astro.generator}/>
+		<title>Portfolio Lautaro Caylá</title>
+	</head>
+	<body>
+		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+		<Header />
+		<slot />
+	</body>
 </html>
+<style is:global>
+	:root {
+		color-scheme: dark;
+	}
+	html {
+		font-family: "Nunito variable",system-ui, sans-serif;
+	}
+	body {
+		background-color: #0A0A0A;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+	}
+</style>
