@@ -1,0 +1,41 @@
+{
+    "experiencia": [
+      {
+        "empresa": "Freelance",
+        "rol": "Desarrollador web/móvil",
+        "periodo": "Febrero 2020 - 2022",
+        "responsabilidades": [
+          "Consultas y implementación de APIs",
+          "Consultas a Base de datos",
+          "Formularios",
+          "Desarrollo de sitios web responsive",
+          "Creación de pantallas móviles"
+        ]
+      },
+      {
+        "empresa": "Migrate Solutions",
+        "rol": "Frontend Developer",
+        "periodo": "Julio 2022 - 2024",
+        "responsabilidades": [
+          "Creación de APK (React Native)",
+          "Integraciones de APIs",
+          "Manejo de consultas a Base de datos (MongoDB)",
+          "Mantenimiento de sitios web",
+          "Participación en grupos de integración de diseños UX/UI"
+        ]
+      },
+      {
+        "empresa": "Wiber",
+        "rol": "FullStack Developer",
+        "periodo": "Diciembre 2024 - Presente",
+        "responsabilidades": [
+          "Creación y gestión de backend (Python)",
+          "Creación de flujos (FlutterFlow)",
+          "Migraciones de bases de datos (Anatod-Odoo)",
+          "Mantenimiento de sitio web",
+          "Creación de producto propio"
+        ]
+      }
+    ]
+  }
+  
