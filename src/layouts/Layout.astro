@@ -1,6 +1,6 @@
 ---
-import Header from '../components/Header.astro';
-import '@fontsource-variable/nunito';
+import Header from "../components/Header.astro";
+import "@fontsource-variable/nunito";
 ---
 
 <!doctype html>
@@ -8,12 +8,15 @@ import '@fontsource-variable/nunito';
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="code.png" />
-		<meta name="generator" content={Astro.generator}/>
+		<link rel="icon" type="image/svg+xml" href="RacconWizerViolet.png" />
+		<meta name="generator" content={Astro.generator} />
 		<title>DevOdranoel</title>
 	</head>
 	<body>
-		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+		<div
+			class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+		>
+		</div>
 		<Header />
 		<slot />
 	</body>
@@ -23,12 +26,14 @@ import '@fontsource-variable/nunito';
 		color-scheme: dark;
 	}
 	html {
-		font-family: "Nunito variable",system-ui, sans-serif;
+		font-family: "Nunito variable", system-ui, sans-serif;
 	}
 	body {
-		background-color: rgba(64, 96, 63, 0.806);
+		background-color: rgba(42, 1, 59, 0.92);
+		color: white;
 		display: flex;
 		flex-direction: column;
 		height: 100vh;
+		backdrop-filter: blur(1px);
 	}
 </style>
