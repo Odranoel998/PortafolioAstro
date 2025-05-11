@@ -13,10 +13,10 @@ import "@fontsource-variable/nunito";
 		<title>DevOdranoel</title>
 	</head>
 	<body>
-		<div
+		<!-- <div
 			class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
 		>
-		</div>
+		</div> -->
 		<Header />
 		<slot />
 	</body>
@@ -26,14 +26,22 @@ import "@fontsource-variable/nunito";
 		color-scheme: dark;
 	}
 	html {
-		font-family: "Nunito variable", system-ui, sans-serif;
+		font-family: 'Inter', sans-serif;
 	}
 	body {
-		background-color: rgba(42, 1, 59, 0.92);
+		margin: 0;
+		padding: 0;
+		background-color: #1d0230;
+		background-image: radial-gradient(
+			ellipse 80% 80% at 50% -20%,
+			rgba(80, 60, 160, 0.25),
+			rgba(40, 20, 80, 0.1)
+		);
+		background-blend-mode: normal;
 		color: white;
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
-		backdrop-filter: blur(1px);
+		min-height: 100vh;
+		font-family: "Nunito Variable", sans-serif;
 	}
 </style>
